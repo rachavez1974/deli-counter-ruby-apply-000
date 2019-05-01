@@ -1,16 +1,21 @@
 # Write your code here.
-
+cust = ["Logan", "Avi", "Spencer"]
 
 def line(customers)
   if customers.empty?
     puts "The line is currently empty."
   else
-    print "The line is currently: "
+    print "The line is currently:"
     customers.each.with_index { |cust, index|
-       print "#{index + 1}. #{cust}" }
-
+       print " #{index + 1}. #{cust}" }
   end
+  print "\n"
 end
+
+
+line(cust)
+
+
 
 
 def take_a_number(customers, name)
@@ -27,4 +32,6 @@ def now_serving(customers)
     customers.shift
   end
 end
+
+
 
